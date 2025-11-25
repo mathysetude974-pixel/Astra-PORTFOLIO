@@ -232,7 +232,7 @@ body {
   height: 400px;
   border-radius: 26px;
   overflow: hidden;                 /* IMPORTANT */
-  background-image: url("image/eglise.jpg");
+  background-image: url("image/eglise.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

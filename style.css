@@ -400,7 +400,7 @@ body {
 
 /* Fake backgrounds (remplace avec tes vraies images) */
 .thumb-landscape-1 {
-  background-image: url("image/arbre.jpg");
+  background-image: url("image/eglise.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

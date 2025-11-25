@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Astra Photo – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font (optionnel) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <div class="nav-avatar"></div>
+        <div class="logo-text">
+          <span>Astra Photo</span>
+          <span>Photography Portfolio</span>
+        </div>
+</div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <div class="nav-links">
+        <a href="#home">Accueil</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero container reveal">
+      <div class="hero-content">
+        <div class="hero-text-block">
+          <p class="hero-kicker">Photography • Landscapes • Cars • Night Sky</p>
+          <h1 class="hero-title">Saisir la lumière,<br> sublimer le moment.</h1>
+          <p class="hero-subtitle">
+            Astra Photo – portfolio dédié aux paysages, scènes automobiles, portraits entre amis et astrophotographie.
+            Un voyage visuel construit autour de la lumière, de l'émotion et de l'atmosphère.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#gallery" class="btn btn-primary">Explorer la galerie</a>
+            <a href="#about" class="btn btn-outline">À propos du photographe</a>
+          </div>
+        </div>
+
+        <div class="hero-preview">
+          <div class="hero-frame">
+            <div class="hero-image hero-image-main"></div>
+            <div class="hero-image hero-image-secondary"></div>
+            <div class="hero-tag hero-tag-1">Paysages</div>
+            <div class="hero-tag hero-tag-2">Autos</div>
+            <div class="hero-tag hero-tag-3">Astro</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section container reveal">
+      <header class="section-header">
+        <p class="section-kicker">Galerie</p>
+        <h2 class="section-title">Une sélection visuelle de moments et d'atmosphères.</h2>
+        <p class="section-subtitle">
+          Paysages, voitures, portraits et ciel nocturne – un aperçu de mon travail à travers différentes perspectives et ambiances.
+        </p>
+      </header>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="landscapes">Paysages</button>
+        <button class="filter-btn" data-filter="cars">Voitures</button>
+        <button class="filter-btn" data-filter="friends">Amis</button>
+        <button class="filter-btn" data-filter="astro">Astrophotographie</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="gallery-grid">
+        <!-- LANDSCAPES -->
+        <article class="photo-card clickable" data-category="landscapes" data-image="thumb-landscape-1" data-title="Horizon Silencieux" data-description="Lumière douce sur un paysage tranquille.">
+          <div class="photo-thumb thumb-landscape-1"></div>
+          <div class="photo-info">
+            <h3>Horizon Silencieux</h3>
+            <p>Lumière douce sur un paysage tranquille.</p>
+          </div>
+        </article>
+
+        <article class="photo-card clickable" data-category="landscapes" data-image="thumb-landscape-2" data-title="Matin Brumeux" data-description="Scène atmosphérique aux tons subtils.">
+          <div class="photo-thumb thumb-landscape-2"></div>
+          <div class="photo-info">
+            <h3>Matin Brumeux</h3>
+            <p>Scène atmosphérique aux tons subtils.</p>
+          </div>
+        </article>
+
+        <!-- CARS -->
+        <article class="photo-card clickable" data-category="cars" data-image="thumb-car-1" data-title="M3" data-description="Lumières urbaines se reflétan sur la carrosserie.">
+          <div class="photo-thumb thumb-car-1"></div>
+          <div class="photo-info">
+            <h3>M3</h3>
+            <p>Lumières urbaines se reflétan sur la carrosserie.</p>
+          </div>
+        </article>
+
+        <article class="photo-card clickable" data-category="cars" data-image="thumb-car-2" data-title="M2" data-description="Lignes, formes et mouvement suggérés.">
+          <div class="photo-thumb thumb-car-2"></div>
+          <div class="photo-info">
+            <h3>M2</h3>
+            <p>Lignes, formes et mouvement suggérés.</p>
+          </div>
+        </article>
+
+        <!-- FRIENDS -->
+        <article class="photo-card clickable" data-category="friends" data-image="thumb-friends-1" data-title="Tokyo" data-description="Moments authentiques, expressions naturelles.">
+          <div class="photo-thumb thumb-friends-1"></div>
+          <div class="photo-info">
+            <h3>Tokyo</h3>
+            <p>Moments authentiques, expressions naturelles.</p>
+          </div>
+        </article>
+
+        <article class="photo-card clickable" data-category="friends" data-image="thumb-friends-2" data-title="Tyah" data-description="Capturer la connexion et l'énergie.">
+          <div class="photo-thumb thumb-friends-2"></div>
+          <div class="photo-info">
+            <h3>Tyah</h3>
+            <p>Capturer la connexion et l'énergie.</p>
+          </div>
+        </article>
+
+        <!-- ASTRO -->
+        <article class="photo-card clickable" data-category="astro" data-image="thumb-astro-1" data-title="Nébuleuse" data-description="Lumières de la ville face au ciel nocturne.">
+          <div class="photo-thumb thumb-astro-1"></div>
+          <div class="photo-info">
+            <h3>Nébuleuse</h3>
+            <p>Lumières de la ville face au ciel nocturne.</p>
+          </div>
+        </article>
+
+        <article class="photo-card clickable" data-category="astro" data-image="thumb-astro-2" data-title="Voie Lactée" data-description="Longue exposition sous les étoiles.">
+          <div class="photo-thumb thumb-astro-2"></div>
+          <div class="photo-info">
+            <h3>Voie Lactée</h3>
+            <p>Longue exposition sous les étoiles.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container reveal">
+      <header class="section-header">
+        <p class="section-kicker">À propos</p>
+        <h2 class="section-title">Derrière l'objectif.</h2>
+      </header>
+
+      <div class="about-layout">
+        <div class="about-photo">
+          <div class="about-avatar"></div>
+          <p class="about-name">Astra Photo</p>
+          <p class="about-role">Photography • Landscapes • Cars • Night Sky</p>
+        </div>
+
+        <div class="about-text">
+          <p>
+            J'ai commencé la photographie en capturant le quotidien – amis, rues et paysages qui m'entourent.
+            Étape par étape, j'ai construit un style axé sur l'atmosphère, la lumière et les moments sincères.
+          </p>
+          <p>
+            Aujourd'hui mon travail gravite autour de quatre univers principaux : <strong>paysages</strong>, <strong>voitures</strong>, 
+            <strong>amis & portraits</strong> et <strong>astrophotographie</strong>. 
+            Chaque image est une façon de figer une émotion, pas seulement une scène.
+          </p>
+          <p>
+            Mon objectif est simple : créer des images qui semblent réelles, cinématographiques et mémorables – qu'il s'agisse d'un horizon tranquille,
+            d'une voiture en mouvement, d'un groupe d'amis ou d'un ciel nocturne rempli d'étoiles.
+          </p>
+
+          <div class="about-highlight">
+            La photographie pour moi, c'est un équilibre entre émotion et précision, entre ce qui est vu et ce qui est ressenti.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section container reveal">
+      <header class="section-header">
+        <p class="section-kicker">Services</p>
+        <h2 class="section-title">Séances photo adaptées à votre histoire.</h2>
+        <p class="section-subtitle">
+          Des portraits aux séances créatives et projets automobiles, chaque session est conçue pour correspondre à votre atmosphère et vos attentes.
+        </p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Séances Portraits</h3>
+          <p>
+            Portraits individuels ou en duo, dans des environnements naturels ou urbains. 
+            Focus sur l'émotion, la personnalité et les expressions authentiques.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>Séances Créatives</h3>
+          <p>
+            Sessions conceptuelles et artistiques construites autour d'un thème, d'un lieu ou d'une ambiance, pour des projets personnels ou artistiques.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>Photographie Automobile</h3>
+          <p>
+            Voitures et véhicules en mouvement ou statiques. Accent sur les formes, reflets, lignes et la relation avec l'environnement.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>Événements & Collaborations</h3>
+          <p>
+            Petits événements, rassemblements, collaborations créatives ou contenu pour réseaux sociaux. 
+            Approche flexible adaptée à chaque projet.
+          </p>
+        </article>
+      </div>
+
+      <div class="services-cta">
+        <a href="#contact" class="btn btn-primary">Réserver une séance</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container reveal">
+      <header class="section-header">
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title">Parlons de votre prochain projet.</h2>
+        <p class="section-subtitle">
+          Pour une séance, collaboration ou toute question, n'hésitez pas à envoyer un message. Je répondrai dès que possible.
+        </p>
+      </header>
+
+      <div class="contact-layout">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+          <!-- Clé d'accès Web3Forms -->
+          <input type="hidden" name="access_key" value="d64036ee-ec93-4241-aba7-cf5549da39eb">
+          <input type="hidden" name="email" value="mathysroger974@gmail.com">
+          <input type="hidden" name="subject" value="Nouveau message depuis le portfolio Astra Photo">
+          <input type="hidden" name="redirect" value="false">
+          
+          <div class="field">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" placeholder="Votre nom" required>
+          </div>
+
+          <div class="field">
+            <label for="from_email">Email</label>
+            <input id="from_email" name="from_email" type="email" placeholder="vous@exemple.com" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Parlez-moi de votre projet, idée ou séance." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <span class="btn-text">Envoyer le message</span>
+            <span class="btn-loader" style="display: none;">📤 Envoi...</span>
+          </button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Me trouver en ligne</h3>
+          <p>
+            Vous pouvez aussi suivre mon travail et me contacter sur Instagram :
+          </p>
+          <a href="https://www.instagram.com/astra_photo974" target="_blank" class="social-link">
+            @astra_photo974
+          </a>
+          <p class="contact-note">
+            Le formulaire ci-dessus est une démo visuelle – connectez-le à votre email ou un service de formulaire dans Wix Studio.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Astra Photo. Tous droits réservés.</span>
+      <span>Portfolio expérimental – lumière, mouvement et ciels nocturnes.</span>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Fermer">&times;</button>
+      <img class="lightbox-image" src="" alt="">
+      <div class="lightbox-info">
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
